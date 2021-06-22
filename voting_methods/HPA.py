@@ -5,7 +5,6 @@
 # @File    : HPA.py
 # @Software: PyCharm
 # @Description:
-# 2020.12.12 周六
 import pandas as pd
 from sklearn import preprocessing
 import numpy as np
@@ -15,7 +14,6 @@ from utils.utils import Utils
 
 
 def HPA_esembling(df_lst):
-    # 2021.1.13 批量处理得到的结果 使用的HPA投票方法
     colnames = list(df_lst[0])
     df_HPA_result = pd.DataFrame(index=list(df_lst[0][colnames[0]]), columns=['score'])
     # all_df_new = pd.DataFrame(index=list(df_result['gene_name']))
