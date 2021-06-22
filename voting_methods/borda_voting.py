@@ -4,7 +4,7 @@
 # @Author  : kanyingxin
 # @File    : borda_voting.py
 # @Software: PyCharm
-# @Description: what for
+# @Description:
 
 
 import pandas as pd
