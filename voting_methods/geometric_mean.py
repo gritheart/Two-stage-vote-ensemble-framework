@@ -4,8 +4,7 @@
 # @Author  : kanyingxin
 # @File    : geometric_mean.py
 # @Software: PyCharm
-# @Description: what for
-
+# @Description: 
 import pandas as pd
 import math
 
