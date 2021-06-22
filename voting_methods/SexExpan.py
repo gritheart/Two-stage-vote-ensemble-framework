@@ -5,7 +5,6 @@
 # @File    : SexExpan.py
 # @Software: PyCharm
 # @Description:
-# 2020.12.21 来自SexExpan的ranking_emsembling
 
 import pandas as pd
 
