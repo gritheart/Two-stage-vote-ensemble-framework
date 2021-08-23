@@ -4,3 +4,13 @@ Identifying driver genes, exactly from massive genes with mutations, promotes ac
 
 ![image](https://github.com/gritheart/Two-stage-vote-ensemble-framework/blob/main/1-flowchart.jpg)
 
+%**********************************************************************************************************************************************************************************
+
+1. example：There are example data of Adenoid cystic carcino (ACC). It includes Functional Impact vectors (ACC_PPH2.mat and ACC_SIFT.mat), Frequency vector (ACC.mat) and five gene interaction networks handled by mutated coding genes in the experimental dataset of ACC (dawnrank_handled.mat, hint_hi2012_handled.mat, irefindex_handled.mat, multinet_handled.mat and wu_handled.mat). 
+
+2. iterative_model.m: We combine Frequency, PolyPhen and SIFT scores in pair, which generates three feature combinations, i.e., Frequency_PolyPhen, Frequency_SIFT and PolyPhen_SIFT. Two elements in a combination are regarded as A0 and H0 of iterative model, respectively. Undirected graph M is provided by reconstructed networks mentioned above. In a word, there are 15 diverse inputs produced by three feature combinations and five undirected graphs and updated Ak and Hk are two outputs for each input.
+
+3. voting_methods: We build a two-stage voting pipeline. First, we integrate corresponding iteration outcomes for Frequency_PolyPhen, Frequency_SIFT and PolyPhen_SIFT by the first vote, respectively, and produce three integrated ranked gene lists to study which feature combination is effective. Then, we integrate these three rankings by the second vote in order to get the final selection and detect novel driver genes. Here, we offer four various voting methods: Borda voting, Geometric mean, HPA and SetExpan, in order to explore whether voting methods influence results or not, if so, which ones perform well. 
+
+
+
